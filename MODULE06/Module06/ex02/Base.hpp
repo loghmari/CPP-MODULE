@@ -1,0 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Base.hpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sloghmar <sloghmar@student.42mulhouse.fr>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/14 16:49:06 by sloghmar          #+#    #+#             */
+/*   Updated: 2023/02/14 16:49:53 by sloghmar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef BASE_HPP
+	#define BASE_HPP
+
+#include <iostream>
+
+class Base 
+{
+	public:
+		virtual ~Base(){};  
+};
+
+class A : public Base {};
+class B : public Base {};
+class C : public Base {};
+
+Base * generate(void);
+void identify(Base* p); 
+void identify(Base& p);
+
+#endif
